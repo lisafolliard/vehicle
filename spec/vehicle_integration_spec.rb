@@ -14,13 +14,9 @@ describe('request vehicle information path', {:type => :feature}) do
     expect(page).to have_content('All Vehicles')
   end
 
-  # it('loads /vehicles/:id page and returns page with information about single vehicle') do
-  #   visit('/vehicles/:id')
-  #   expect(page).to have_content('Your Requested Vehicle Information')
-  # end
-
   it('loads /vehicles/new page and shows a form to add new vehicle') do
     visit('/vehicles/new')
-    expect(page).to have_content('Add New Vehicle')
+    expect(page).to have_content('Add a vehicle')
   end
+
 end
