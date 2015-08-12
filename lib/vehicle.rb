@@ -5,6 +5,7 @@ class Vehicle
     @make = make
     @model = model
     @year = year
+    @id = @@vehicles.length().+(1)
   end
 
   define_method(:make) do
@@ -17,6 +18,10 @@ class Vehicle
 
   define_method(:year) do
     @year
+  end
+
+  define_method(:id) do
+    @id
   end
 
   define_method(:save) do
@@ -40,4 +45,6 @@ class Vehicle
     american_cars = ["Chrysler", "Ford", "GM"]
     american_cars.include?(@make).&(self.age().<=(15))
   end
+
+
 end
