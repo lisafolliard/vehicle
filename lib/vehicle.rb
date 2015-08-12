@@ -36,5 +36,8 @@ class Vehicle
     current_year.-(@year)
   end
 
-
+  define_method(:worth_buying?) do
+    american_cars = ["Chrysler", "Ford", "GM"]
+    american_cars.include?(@make).&(self.age().<=(15))
+  end
 end
