@@ -6,7 +6,7 @@ set(:show_exceptions, false)
 describe('request vehicle information path', {:type => :feature}) do
   it('loads the home page') do
     visit('/')
-    expect(page).to have_content('Add New Vehicle')
+    expect(page).to have_content('Add a vehicle')
   end
 
   it('loads /vehicles page and lists all vehicles') do
