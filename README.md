@@ -4,7 +4,7 @@
 
 ## Description
 
-A site that lists dealerships and details about their available vehicles
+Application that stores information about dealerships and the vehicles they sell
 
 ## Setup
 
@@ -18,8 +18,8 @@ Go to localhost:4567 in your web browser to open application
 
 ## Technologies Used
 
-* Ruby
 * HTML
+* Ruby
 
 ### Legal
 
